@@ -1,0 +1,76 @@
+First Configuration on Git
+git config --global user.name "name"
+git config --global user.email"someone@gmail.com"
+git config --list
+
+Second clone & status
+Cloning :-cloning a resopitory on our local mschine 
+git clone link(https://)
+status :-display the state of the code
+git status 
+
+untracked: new files that git dosen't yet track 
+modified: changed
+staged:file is ready to be committed 
+unmodified:unchanged
+
+Third Add & Commit
+Add:-add new or changed files in your working directory to the Git staging area.
+git add filename
+Commit:-It is the record of Change 
+git commit -m "some message";
+
+Fourth push ( so we can see the changes in the github)
+push - upload local repo content to remote repo
+git push origin main
+origin:- is remote github name we can use any other name 
+main:- this ia a branch in github
+
+Fifth init Command
+init - used to create a new git repo
+git init
+git remote add origin link
+git remote-v (to verify remote)
+git branch (to check branch)
+git branch-M main ( to remove branch)
+git push origin main
+
+Sixth Branch Commands
+git branch (to check branch)
+git branch -m main (to rename branch)
+git checkout branch name (to navigate)
+git checkout -b new branch name (to create new branch)
+git branch -d branch name
+
+git stash if you don't want to commit the changes of the deleted branch
+
+Seventh Merging code
+git diff branch name (to compare commits,branches,files & more)
+git merge branch name (to merge 2 branches)
+
+Anoter way of doing create pull request
+It lets you tell other about changes  you've pushed to a branch in a repository on GitHub
+
+pull request 
+git pull origin main
+used to fetch and download content from a remote repo and immediately update the local repo to match that content
+
+Undoing Changes 
+Case 1: Staged changes 
+git reset filename
+git reset
+
+Case 2:commited changes(for one commit)
+git reset HEAD-1
+
+Case 3:commited changes(for many commits)
+git reset "Commit hash"
+git reset --hard "commit hash
+
+to the hash of the commit we need to see the hash by 
+git log
+
+Fork 
+A fork is a new repository that shares code and visiblity settings with the original "upstream"
+repository.
+fork is a rough copy.
